@@ -145,8 +145,16 @@ body {
   }
 }
 
+@media(max-width: 590px){
+  .choices{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 500px) {
   .choice {
     font-size: 80px;
   }
 }
+
