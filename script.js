@@ -62,21 +62,21 @@ function showWinner(winner, computerChoice) {
         result.innerHTML = ` 
         <h1 class = "text-win">You win</h1>
         <i class = fas fa-hand-${computerChoice} fa-10x"</i>
-        <p>Computer chose <strong>${computerChoice.charAt(0).toUpperCase()}<strong></p>
+        <p>Computer chose <strong>${computerChoice.toUpperCase()}<strong></p>
         `
     } else if(winner === 'computer'){
         scoreBoard.computer++
         result.innerHTML = `
         <h1 class = "text-lose">You lost</h1>
         <i class = "fas fa-hand-${computerChoice} fa-10x"</i>
-        <p>Computer chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}<strong></p>
+        <p>Computer chose <strong>${computerChoice.toUpperCase()}<strong></p>
         `
     }
     else{
         result.innerHTML = `
         <h1>It is a draw</h1>
         <i class = "fas fa-hand-${computerChoice} fa-10x"</i>
-        <p>Computer chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}<strong></p>
+        <p>Computer chose <strong>${computerChoice.toUpperCase()}<strong></p>
         `
     }
 
